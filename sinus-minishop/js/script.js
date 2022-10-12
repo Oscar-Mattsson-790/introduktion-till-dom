@@ -33,14 +33,48 @@ const sinusFireFigureBackground = document.querySelector(
 sinusFireFigureBackground.style.backgroundColor = "blue";
 // console.log(sinusFireFigureBackground);
 
-const whereWeAreAddress = document.querySelectorAll(
-  "footer section article p"
-)[0];
-whereWeAreAddress.innerText = [
-  "Sinus skateboards Blåklintvägen 45 Arboga 342 22",
-];
+const whereWeAreAddress = document.querySelector("footer section article p");
+whereWeAreAddress.innerText =
+  "Sinus skateboards \n Blåklintvägen 45 \n Arboga 342 22";
 // console.log(whereWeAreAddress);
 
-const pageParagraphs = document
-  .querySelectorAll("p")
-  .forEach((p) => (p.style.color = "red"));
+const pageParagraphs = document.querySelectorAll("p");
+// .forEach((p) => (p.style.color = "red"));
+pageParagraphs[0].style.color = "red";
+pageParagraphs[1].style.color = "red";
+pageParagraphs[2].style.color = "red";
+pageParagraphs[3].style.color = "red";
+// console.log(pageParagraphs);
+
+const pageBtns = document.querySelectorAll("button");
+// .forEach((button) => (button.innerText = "add to cart"));
+pageBtns[0].innerText = "add to cart";
+pageBtns[1].innerText = "add to cart";
+pageBtns[2].innerText = "add to cart";
+// console.log(pageBtns);
+
+const addClassActive = document.querySelector("footer section article a");
+addClassActive.classList = "active";
+// console.log(addClassActive);
+
+const removeClassLogo = document.querySelector("header img");
+removeClassLogo.classList.remove("logo");
+// console.log(removeClassLogo);
+
+const imgLogo = document.querySelector("img");
+// console.log(imgLogo);
+imgLogo.addEventListener("click", () => {
+  console.log("found you!");
+});
+
+const allArticle = document.querySelectorAll("article");
+console.log(allArticle);
+allArticle[0].addEventListener("click", () => {
+  console.log("Hi, Im article Fire/Ash/Water");
+});
+allArticle[1].addEventListener("click", () => {
+  console.log("Hi, Im article Fire/Ash/Water");
+});
+allArticle[2].addEventListener("click", () => {
+  console.log("Hi, Im article Fire/Ash/Water");
+});
